@@ -1,0 +1,392 @@
+[
+  {
+    "id": "q01",
+    "type": "direct",
+    "question": "Do I have to give my SIN when I apply for a job?",
+    "gold": [
+      {
+        "source": "protect_SIN.pdf",
+        "page": 3,
+        "anchor": "applying for a job"
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "type": "direct",
+    "question": "What phone number do I call to report SIN fraud to the Canadian Anti-Fraud Centre?",
+    "gold": [
+      {
+        "source": "protect_SIN.pdf",
+        "page": 4,
+        "anchor": "1-888-495-8501"
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "type": "direct",
+    "question": "How do I apply for a Social Insurance Number for my newborn baby?",
+    "gold": [
+      {
+        "source": "apply_newborn_SIN.pdf",
+        "page": 1,
+        "anchor": "Registration of Birth form"
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "type": "direct",
+    "question": "Can I apply for a SIN by mail instead of going in person?",
+    "gold": [
+      {
+        "source": "apply_SIN.pdf",
+        "page": 1,
+        "anchor": "100 kilometers"
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "type": "direct",
+    "question": "Which documents must a temporary resident show to get a SIN?",
+    "gold": [
+      {
+        "source": "apply_SIN.pdf",
+        "page": 3,
+        "anchor": "Temporary residents must provide"
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "type": "direct",
+    "question": "What do I need if my SIN document is in another language and has been translated?",
+    "gold": [
+      {
+        "source": "apply_SIN.pdf",
+        "page": 5,
+        "anchor": "attestation"
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "type": "direct",
+    "question": "What does a legal guardian need to provide to apply for a child's SIN?",
+    "gold": [
+      {
+        "source": "apply_SIN.pdf",
+        "page": 4,
+        "anchor": "legal guardianship"
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "type": "direct",
+    "question": "Which documents can a Canadian citizen use as proof when applying for a SIN?",
+    "gold": [
+      {
+        "source": "apply_SIN.pdf",
+        "page": 2,
+        "anchor": "Certificate of Canadian Citizenship"
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "type": "direct",
+    "question": "Who is allowed to give paid immigration advice in Canada?",
+    "gold": [
+      {
+        "source": "3247-b-factsheet-do-it-right-eng.pdf",
+        "page": 1,
+        "anchor": "College of Immigration"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "type": "direct",
+    "question": "What can happen to me if I use an unlicensed immigration consultant?",
+    "gold": [
+      {
+        "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+        "page": 1,
+        "anchor": "barred from entering Canada"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "type": "direct",
+    "question": "Will IRCC ever phone me to collect fees or fines?",
+    "gold": [
+      {
+        "source": "fraud_newcomers.pdf",
+        "page": 1,
+        "anchor": "contact you over the telephone to collect fees"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "type": "direct",
+    "question": "On what day of the month is the Canada Child Benefit usually paid?",
+    "gold": [
+      {
+        "source": "ccb-2025.pdf",
+        "page": 9,
+        "anchor": "20th of each month"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "type": "direct",
+    "question": "By when do I have to tell the CRA that my marital status has changed?",
+    "gold": [
+      {
+        "source": "ccb-2025.pdf",
+        "page": 13,
+        "anchor": "end of the month following"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "type": "direct",
+    "question": "What is the deadline for filing my income tax return in Canada?",
+    "gold": [
+      {
+        "source": "welcome.pdf",
+        "page": 108,
+        "anchor": "April 30"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "type": "direct",
+    "question": "What rights will I have if I become a Canadian citizen?",
+    "gold": [
+      {
+        "source": "welcome.pdf",
+        "page": 37,
+        "anchor": "right to"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "type": "direct",
+    "question": "Is it legal to drive in Canada without car insurance?",
+    "gold": [
+      {
+        "source": "welcome.pdf",
+        "page": 124,
+        "anchor": "strictly illegal to drive without car insurance"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "type": "direct",
+    "question": "How many benchmarks does the Canadian Language Benchmarks scale have?",
+    "gold": [
+      {
+        "source": "language-benchmarks.pdf",
+        "page": 11,
+        "anchor": "12 benchmarks"
+      },
+      {
+        "source": "language-benchmarks.pdf",
+        "page": 16,
+        "anchor": "12 benchmarks"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "type": "direct",
+    "question": "Can a permanent resident work for any employer in Canada?",
+    "gold": [
+      {
+        "source": "employer-roadmap-en.pdf",
+        "page": 6,
+        "anchor": "authorized to work for any employer"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "type": "direct",
+    "question": "Why do privacy commissioners say retailers do not need to record a customer's driver's licence number?",
+    "gold": [
+      {
+        "source": "licence-guide-for-retailers.pdf",
+        "page": 5,
+        "anchor": "merely by examining"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "type": "direct",
+    "question": "Who can apply for an open work permit because of abuse at work?",
+    "gold": [
+      {
+        "source": "open-work-permit.pdf",
+        "page": 1,
+        "anchor": "being abused or at risk of being abused"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "type": "multi",
+    "question": "What documents do I need to apply for a Social Insurance Number?",
+    "gold": [
+      {
+        "source": "apply_SIN.pdf",
+        "page": 2,
+        "anchor": "Certificate of Canadian Citizenship"
+      },
+      {
+        "source": "apply_SIN.pdf",
+        "page": 3,
+        "anchor": "Temporary residents must provide"
+      },
+      {
+        "source": "welcome.pdf",
+        "page": 47,
+        "anchor": "Important documents"
+      },
+      {
+        "source": "welcome.pdf",
+        "page": 48,
+        "anchor": "Work permit from CIC"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "type": "multi",
+    "question": "How can I protect myself from fraud and scams as a newcomer?",
+    "gold": [
+      {
+        "source": "fraud_newcomers.pdf",
+        "page": 1,
+        "anchor": "never"
+      },
+      {
+        "source": "fraud_newcomers.pdf",
+        "page": 2,
+        "anchor": "Fake computer virus"
+      },
+      {
+        "source": "protect_SIN.pdf",
+        "page": 1,
+        "anchor": "How to protect your SIN"
+      },
+      {
+        "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+        "page": 1,
+        "anchor": "unlicensed"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "type": "multi",
+    "question": "When should I give out my SIN and when can I refuse?",
+    "gold": [
+      {
+        "source": "protect_SIN.pdf",
+        "page": 2,
+        "anchor": "When to provide your SIN"
+      },
+      {
+        "source": "protect_SIN.pdf",
+        "page": 3,
+        "anchor": "DO NOT have to provide"
+      },
+      {
+        "source": "welcome.pdf",
+        "page": 110,
+        "anchor": "do not need to provide your SIN"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "type": "multi",
+    "question": "Who can I trust to help with my immigration application, and who should I avoid?",
+    "gold": [
+      {
+        "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+        "page": 1,
+        "anchor": "unlicensed"
+      },
+      {
+        "source": "3247-b-factsheet-do-it-right-eng.pdf",
+        "page": 1,
+        "anchor": "licensed"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "type": "multi",
+    "question": "What health coverage will I have as a newcomer and what does the Canada Health Act require of provincial plans?",
+    "gold": [
+      {
+        "source": "welcome.pdf",
+        "page": 49,
+        "anchor": "Health card"
+      },
+      {
+        "source": "welcome.pdf",
+        "page": 50,
+        "anchor": "Waiting period"
+      },
+      {
+        "source": "canada-health-act-2025.pdf",
+        "page": 15,
+        "anchor": "THE CRITERIA"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "type": "unanswerable",
+    "question": "What is the minimum Express Entry CRS score needed to get an invitation?",
+    "gold": []
+  },
+  {
+    "id": "q27",
+    "type": "unanswerable",
+    "question": "How much does it cost to apply for Canadian citizenship?",
+    "gold": []
+  },
+  {
+    "id": "q28",
+    "type": "unanswerable",
+    "question": "What is the current minimum wage in Ontario?",
+    "gold": []
+  },
+  {
+    "id": "q29",
+    "type": "unanswerable",
+    "question": "Who won the hockey game last night?",
+    "gold": []
+  },
+  {
+    "id": "q30",
+    "type": "unanswerable",
+    "question": "What is the best mortgage interest rate available right now?",
+    "gold": []
+  }
+]

@@ -1,0 +1,2048 @@
+{
+  "label": "baseline",
+  "time": "2026-10-22T14:30:26",
+  "settings": {
+    "embed_model": "BAAI/bge-small-en-v1.5",
+    "chunk_size": 2000,
+    "chunk_overlap": 200,
+    "k": 10
+  },
+  "summary": {
+    "all_answerable": {
+      "n": 25,
+      "mrr": 0.755,
+      "hit@1": 0.68,
+      "cov@1": 0.583,
+      "hit@3": 0.8,
+      "cov@3": 0.727,
+      "hit@5": 0.88,
+      "cov@5": 0.777,
+      "hit@10": 0.96,
+      "cov@10": 0.88
+    },
+    "direct": {
+      "n": 20,
+      "mrr": 0.764,
+      "hit@1": 0.7,
+      "cov@1": 0.675,
+      "hit@3": 0.8,
+      "cov@3": 0.8,
+      "hit@5": 0.85,
+      "cov@5": 0.85,
+      "hit@10": 0.95,
+      "cov@10": 0.95
+    },
+    "multi": {
+      "n": 5,
+      "mrr": 0.717,
+      "hit@1": 0.6,
+      "cov@1": 0.217,
+      "hit@3": 0.8,
+      "cov@3": 0.433,
+      "hit@5": 1.0,
+      "cov@5": 0.483,
+      "hit@10": 1.0,
+      "cov@10": 0.6
+    },
+    "unanswerable_top_scores": [
+      0.6163,
+      0.7618,
+      0.6673,
+      0.5827,
+      0.6425
+    ],
+    "answerable_top_score_mean": 0.7939
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "type": "direct",
+      "question": "Do I have to give my SIN when I apply for a job?",
+      "top_score": 0.7911,
+      "retrieved": [
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.7911
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 2,
+          "score": 0.7237
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.7053
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.704
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "score": 0.7007
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "score": 0.7
+        },
+        {
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "score": 0.698
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.6868
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.6721
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 4,
+          "score": 0.6653
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q02",
+      "type": "direct",
+      "question": "What phone number do I call to report SIN fraud to the Canadian Anti-Fraud Centre?",
+      "top_score": 0.8035,
+      "retrieved": [
+        {
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "score": 0.8035
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "score": 0.7832
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 6,
+          "score": 0.7713
+        },
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 2,
+          "score": 0.7443
+        },
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 2,
+          "score": 0.7258
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.7211
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.7033
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.6974
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 15,
+          "score": 0.6972
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "score": 0.6939
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q03",
+      "type": "direct",
+      "question": "How do I apply for a Social Insurance Number for my newborn baby?",
+      "top_score": 0.7979,
+      "retrieved": [
+        {
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "score": 0.7979
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.7541
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "score": 0.7265
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.6815
+        },
+        {
+          "source": "apply_newborn_SIN.pdf",
+          "page": 2,
+          "score": 0.6751
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 1,
+          "score": 0.6598
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.6423
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 6,
+          "score": 0.6407
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 68,
+          "score": 0.636
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 4,
+          "score": 0.6359
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q04",
+      "type": "direct",
+      "question": "Can I apply for a SIN by mail instead of going in person?",
+      "top_score": 0.7627,
+      "retrieved": [
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.7627
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.7307
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.6975
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.6949
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "score": 0.684
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "score": 0.6834
+        },
+        {
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "score": 0.6779
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "score": 0.6752
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.6735
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "score": 0.6681
+        }
+      ],
+      "first_hit_rank": 8,
+      "rr": 0.125,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q05",
+      "type": "direct",
+      "question": "Which documents must a temporary resident show to get a SIN?",
+      "top_score": 0.7934,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.7934
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "score": 0.7462
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 3,
+          "score": 0.7428
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.7042
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.6976
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.6967
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 98,
+          "score": 0.69
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.6872
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.6822
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 131,
+          "score": 0.6781
+        }
+      ],
+      "first_hit_rank": 3,
+      "rr": 0.3333333333333333,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q06",
+      "type": "direct",
+      "question": "What do I need if my SIN document is in another language and has been translated?",
+      "top_score": 0.7648,
+      "retrieved": [
+        {
+          "source": "apply_SIN.pdf",
+          "page": 5,
+          "score": 0.7648
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.7419
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.7259
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 11,
+          "score": 0.7242
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "score": 0.7157
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 3,
+          "score": 0.7
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.6951
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.6947
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.6944
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 7,
+          "score": 0.6753
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q07",
+      "type": "direct",
+      "question": "What does a legal guardian need to provide to apply for a child's SIN?",
+      "top_score": 0.7946,
+      "retrieved": [
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.7946
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.7132
+        },
+        {
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "score": 0.7125
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.6712
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.6696
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.6654
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 2,
+          "score": 0.6626
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "score": 0.6479
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 5,
+          "score": 0.6398
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 5,
+          "score": 0.6397
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q08",
+      "type": "direct",
+      "question": "Which documents can a Canadian citizen use as proof when applying for a SIN?",
+      "top_score": 0.8408,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.8408
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.7747
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.7665
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.7646
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "score": 0.7544
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "score": 0.7535
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.7476
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 3,
+          "score": 0.7468
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 5,
+          "score": 0.7447
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 7,
+          "score": 0.7377
+        }
+      ],
+      "first_hit_rank": 5,
+      "rr": 0.2,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q09",
+      "type": "direct",
+      "question": "Who is allowed to give paid immigration advice in Canada?",
+      "top_score": 0.7883,
+      "retrieved": [
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.7883
+        },
+        {
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "score": 0.7213
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 27,
+          "score": 0.7191
+        },
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.7177
+        },
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 29,
+          "score": 0.7065
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 96,
+          "score": 0.7022
+        },
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "score": 0.7014
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 64,
+          "score": 0.7013
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 64,
+          "score": 0.6991
+        },
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 30,
+          "score": 0.6967
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q10",
+      "type": "direct",
+      "question": "What can happen to me if I use an unlicensed immigration consultant?",
+      "top_score": 0.8509,
+      "retrieved": [
+        {
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "score": 0.8509
+        },
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.6836
+        },
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.6452
+        },
+        {
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "score": 0.6085
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "score": 0.6084
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 128,
+          "score": 0.6073
+        },
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "score": 0.604
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 114,
+          "score": 0.6002
+        },
+        {
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "score": 0.5995
+        },
+        {
+          "source": "gatheringinformation.pdf",
+          "page": 1,
+          "score": 0.5921
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q11",
+      "type": "direct",
+      "question": "Will IRCC ever phone me to collect fees or fines?",
+      "top_score": 0.6754,
+      "retrieved": [
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.6754
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 389,
+          "score": 0.6385
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 353,
+          "score": 0.6352
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 357,
+          "score": 0.6348
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 137,
+          "score": 0.6259
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 354,
+          "score": 0.6246
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 354,
+          "score": 0.6233
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 366,
+          "score": 0.6211
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 359,
+          "score": 0.6177
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 128,
+          "score": 0.6164
+        }
+      ],
+      "first_hit_rank": null,
+      "rr": 0.0,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.0,
+      "cov@10": 0.0
+    },
+    {
+      "id": "q12",
+      "type": "direct",
+      "question": "On what day of the month is the Canada Child Benefit usually paid?",
+      "top_score": 0.7715,
+      "retrieved": [
+        {
+          "source": "ccb-2025.pdf",
+          "page": 1,
+          "score": 0.7715
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 10,
+          "score": 0.759
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 8,
+          "score": 0.7583
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 4,
+          "score": 0.7534
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "score": 0.7447
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 11,
+          "score": 0.7423
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "score": 0.7421
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 9,
+          "score": 0.7394
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 11,
+          "score": 0.7232
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.7124
+        }
+      ],
+      "first_hit_rank": 8,
+      "rr": 0.125,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q13",
+      "type": "direct",
+      "question": "By when do I have to tell the CRA that my marital status has changed?",
+      "top_score": 0.8408,
+      "retrieved": [
+        {
+          "source": "ccb-2025.pdf",
+          "page": 13,
+          "score": 0.8408
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "score": 0.7694
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 8,
+          "score": 0.7306
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "score": 0.7281
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 4,
+          "score": 0.6948
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.692
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 4,
+          "score": 0.6916
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "score": 0.6892
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 9,
+          "score": 0.6867
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 13,
+          "score": 0.6798
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q14",
+      "type": "direct",
+      "question": "What is the deadline for filing my income tax return in Canada?",
+      "top_score": 0.7779,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 107,
+          "score": 0.7779
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 108,
+          "score": 0.7778
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 107,
+          "score": 0.7536
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 1,
+          "score": 0.7165
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 325,
+          "score": 0.7132
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 9,
+          "score": 0.7087
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 13,
+          "score": 0.7074
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 4,
+          "score": 0.6997
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 5,
+          "score": 0.6958
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.6936
+        }
+      ],
+      "first_hit_rank": 2,
+      "rr": 0.5,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q15",
+      "type": "direct",
+      "question": "What rights will I have if I become a Canadian citizen?",
+      "top_score": 0.8421,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 37,
+          "score": 0.8421
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 137,
+          "score": 0.8192
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 35,
+          "score": 0.7964
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 59,
+          "score": 0.7566
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 2,
+          "score": 0.7527
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 136,
+          "score": 0.7499
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 138,
+          "score": 0.7393
+        },
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.7369
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.736
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.7346
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q16",
+      "type": "direct",
+      "question": "Is it legal to drive in Canada without car insurance?",
+      "top_score": 0.8498,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 124,
+          "score": 0.8498
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 122,
+          "score": 0.7983
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 125,
+          "score": 0.775
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 125,
+          "score": 0.7373
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 124,
+          "score": 0.7201
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 21,
+          "score": 0.7199
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 8,
+          "score": 0.7155
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 21,
+          "score": 0.7046
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 20,
+          "score": 0.6882
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 276,
+          "score": 0.6866
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q17",
+      "type": "direct",
+      "question": "How many benchmarks does the Canadian Language Benchmarks scale have?",
+      "top_score": 0.8225,
+      "retrieved": [
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 16,
+          "score": 0.8225
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 20,
+          "score": 0.7952
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 11,
+          "score": 0.79
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 22,
+          "score": 0.7861
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 7,
+          "score": 0.7834
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 185,
+          "score": 0.7804
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 217,
+          "score": 0.7778
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 2,
+          "score": 0.7774
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 171,
+          "score": 0.7712
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 203,
+          "score": 0.7681
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.5,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q18",
+      "type": "direct",
+      "question": "Can a permanent resident work for any employer in Canada?",
+      "top_score": 0.8448,
+      "retrieved": [
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 6,
+          "score": 0.8448
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 62,
+          "score": 0.7969
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 59,
+          "score": 0.7606
+        },
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 25,
+          "score": 0.7414
+        },
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 16,
+          "score": 0.7401
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 60,
+          "score": 0.7384
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 58,
+          "score": 0.7366
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 5,
+          "score": 0.7331
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 5,
+          "score": 0.7308
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 3,
+          "score": 0.7293
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q19",
+      "type": "direct",
+      "question": "Why do privacy commissioners say retailers do not need to record a customer's driver's licence number?",
+      "top_score": 0.8405,
+      "retrieved": [
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 5,
+          "score": 0.8405
+        },
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 7,
+          "score": 0.7984
+        },
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 6,
+          "score": 0.7828
+        },
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 2,
+          "score": 0.7749
+        },
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 4,
+          "score": 0.7723
+        },
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 3,
+          "score": 0.7644
+        },
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 1,
+          "score": 0.7353
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 114,
+          "score": 0.6427
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 3,
+          "score": 0.6248
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 109,
+          "score": 0.6136
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q20",
+      "type": "direct",
+      "question": "Who can apply for an open work permit because of abuse at work?",
+      "top_score": 0.7857,
+      "retrieved": [
+        {
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "score": 0.7857
+        },
+        {
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "score": 0.7537
+        },
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 6,
+          "score": 0.6547
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 132,
+          "score": 0.638
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 66,
+          "score": 0.6339
+        },
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 14,
+          "score": 0.6293
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 43,
+          "score": 0.6262
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 83,
+          "score": 0.6215
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 62,
+          "score": 0.6189
+        },
+        {
+          "source": "employer-roadmap-en.pdf",
+          "page": 27,
+          "score": 0.6103
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q21",
+      "type": "multi",
+      "question": "What documents do I need to apply for a Social Insurance Number?",
+      "top_score": 0.7995,
+      "retrieved": [
+        {
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "score": 0.7995
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.731
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.7284
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.7243
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 6,
+          "score": 0.7241
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 109,
+          "score": 0.7185
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 1,
+          "score": 0.718
+        },
+        {
+          "source": "apply_newborn_SIN.pdf",
+          "page": 2,
+          "score": 0.7056
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.7032
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 5,
+          "score": 0.6973
+        }
+      ],
+      "first_hit_rank": 4,
+      "rr": 0.25,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.25,
+      "cov@10": 0.25
+    },
+    {
+      "id": "q22",
+      "type": "multi",
+      "question": "How can I protect myself from fraud and scams as a newcomer?",
+      "top_score": 0.7487,
+      "retrieved": [
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "score": 0.7487
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 113,
+          "score": 0.7194
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "score": 0.6761
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 6,
+          "score": 0.657
+        },
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.6549
+        },
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 2,
+          "score": 0.6546
+        },
+        {
+          "source": "gatheringinformation.pdf",
+          "page": 1,
+          "score": 0.6503
+        },
+        {
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 7,
+          "score": 0.6487
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "score": 0.6403
+        },
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 2,
+          "score": 0.6389
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.25,
+      "cov@3": 0.5,
+      "cov@5": 0.5,
+      "cov@10": 0.75
+    },
+    {
+      "id": "q23",
+      "type": "multi",
+      "question": "When should I give out my SIN and when can I refuse?",
+      "top_score": 0.7111,
+      "retrieved": [
+        {
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "score": 0.7111
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 48,
+          "score": 0.701
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 7,
+          "score": 0.6681
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "score": 0.6286
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "score": 0.625
+        },
+        {
+          "source": "protect_SIN.pdf",
+          "page": 2,
+          "score": 0.6242
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 4,
+          "score": 0.6235
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "score": 0.6177
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 8,
+          "score": 0.6119
+        },
+        {
+          "source": "SIN_directive.pdf",
+          "page": 4,
+          "score": 0.611
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.3333333333333333,
+      "cov@3": 0.3333333333333333,
+      "cov@5": 0.3333333333333333,
+      "cov@10": 0.6666666666666666
+    },
+    {
+      "id": "q24",
+      "type": "multi",
+      "question": "Who can I trust to help with my immigration application, and who should I avoid?",
+      "top_score": 0.7126,
+      "retrieved": [
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.7126
+        },
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.6941
+        },
+        {
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "score": 0.6706
+        },
+        {
+          "source": "gatheringinformation.pdf",
+          "page": 1,
+          "score": 0.6491
+        },
+        {
+          "source": "delay-in-study-permit.pdf",
+          "page": 2,
+          "score": 0.6362
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 47,
+          "score": 0.6284
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 264,
+          "score": 0.6269
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 113,
+          "score": 0.6235
+        },
+        {
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "score": 0.6229
+        },
+        {
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "score": 0.6218
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.5,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q25",
+      "type": "multi",
+      "question": "What health coverage will I have as a newcomer and what does the Canada Health Act require of provincial plans?",
+      "top_score": 0.8371,
+      "retrieved": [
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 21,
+          "score": 0.8371
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 315,
+          "score": 0.8276
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 15,
+          "score": 0.8107
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 21,
+          "score": 0.8053
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 175,
+          "score": 0.8029
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 99,
+          "score": 0.7978
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 278,
+          "score": 0.7918
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 82,
+          "score": 0.7912
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 100,
+          "score": 0.7886
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 37,
+          "score": 0.7885
+        }
+      ],
+      "first_hit_rank": 3,
+      "rr": 0.3333333333333333,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.3333333333333333,
+      "cov@5": 0.3333333333333333,
+      "cov@10": 0.3333333333333333
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "question": "What is the minimum Express Entry CRS score needed to get an invitation?",
+      "top_score": 0.6163,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 83,
+          "score": 0.6163
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 15,
+          "score": 0.6116
+        },
+        {
+          "source": "language-benchmarks.pdf",
+          "page": 146,
+          "score": 0.6102
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 60,
+          "score": 0.6055
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 13,
+          "score": 0.6043
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 17,
+          "score": 0.6041
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 19,
+          "score": 0.6041
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 82,
+          "score": 0.6034
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 11,
+          "score": 0.6025
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 84,
+          "score": 0.6003
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "question": "How much does it cost to apply for Canadian citizenship?",
+      "top_score": 0.7618,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 137,
+          "score": 0.7618
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 136,
+          "score": 0.7208
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "score": 0.7165
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "score": 0.7148
+        },
+        {
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "score": 0.7142
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 83,
+          "score": 0.7114
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 5,
+          "score": 0.7075
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 14,
+          "score": 0.7061
+        },
+        {
+          "source": "ccb-2025.pdf",
+          "page": 4,
+          "score": 0.7028
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 51,
+          "score": 0.7016
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "type": "unanswerable",
+      "question": "What is the current minimum wage in Ontario?",
+      "top_score": 0.6673,
+      "retrieved": [
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 132,
+          "score": 0.6673
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 28,
+          "score": 0.6604
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 56,
+          "score": 0.66
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 133,
+          "score": 0.6598
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 146,
+          "score": 0.6587
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 122,
+          "score": 0.6583
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 135,
+          "score": 0.6573
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 145,
+          "score": 0.6553
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 147,
+          "score": 0.6524
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 71,
+          "score": 0.6477
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "type": "unanswerable",
+      "question": "Who won the hockey game last night?",
+      "top_score": 0.5827,
+      "retrieved": [
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 43,
+          "score": 0.5827
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 37,
+          "score": 0.5356
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 42,
+          "score": 0.5336
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 38,
+          "score": 0.524
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 41,
+          "score": 0.52
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 142,
+          "score": 0.5181
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 85,
+          "score": 0.5166
+        },
+        {
+          "source": "canada-immigration-facts.pdf",
+          "page": 39,
+          "score": 0.5154
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 3,
+          "score": 0.5134
+        },
+        {
+          "source": "canada-health-act-2025.pdf",
+          "page": 313,
+          "score": 0.5099
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "type": "unanswerable",
+      "question": "What is the best mortgage interest rate available right now?",
+      "top_score": 0.6425,
+      "retrieved": [
+        {
+          "source": "welcome.pdf",
+          "page": 95,
+          "score": 0.6425
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 96,
+          "score": 0.6238
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 115,
+          "score": 0.5909
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 115,
+          "score": 0.587
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 108,
+          "score": 0.5821
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 112,
+          "score": 0.5731
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 114,
+          "score": 0.5623
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 7,
+          "score": 0.5617
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 94,
+          "score": 0.5585
+        },
+        {
+          "source": "welcome.pdf",
+          "page": 94,
+          "score": 0.5582
+        }
+      ]
+    }
+  ]
+}
