@@ -19,9 +19,13 @@ def embedding_dim() -> int:
 
 
 def embed_passages(texts: list[str], batch_size: int = 32) -> list[list[float]]:
-    vectors = get_model().encode(
+    model = get_model()
+    vectors = model.encode(
         texts, batch_size=batch_size, normalize_embeddings=True, show_progress_bar=False
     )
+    # lengths = [len(model.tokenizer(t)["input_ids"]) for t in texts]
+    # over = sum(n > model.max_seq_length for n in lengths)
+    # print(f"    tokens: max {max(lengths)}, over {model.max_seq_length}: {over}/{len(lengths)}")
     return vectors.tolist()
 
 
