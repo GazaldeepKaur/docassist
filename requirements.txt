@@ -1,0 +1,11 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pypdf>=5
+qdrant-client>=1.12
+sentence-transformers>=3
+pydantic>=2.8,<3
+openai>=1.40
+python-dotenv>=1.0
+# Used from later days (evaluation, hybrid search, tracing):
+rank-bm25==0.2.2
+langfuse>=3,<4
