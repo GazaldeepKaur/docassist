@@ -13,7 +13,7 @@ from datetime import datetime
 from pathlib import Path
 
 from src import config
-from src.retrieve import retrieve
+from src.retrieve import get_client, retrieve
 
 from .metrics import coverage_at_k, first_hit_rank, hit_at_k, reciprocal_rank
 
@@ -43,24 +43,34 @@ def summarize(rows: list[dict]) -> dict:
         out[f"cov@{k}"] = round(mean([r[f"cov@{k}"] for r in rows]), 3)
     return out
 
+def describe(rank: int, h, gold_pages: dict) -> dict:
+    anchor = gold_pages.get((h.source, h.page))
+    return {
+        "rank": rank, "source": h.source, "page": h.page, "chunk": h.chunk,
+        "score": round(h.score, 4),
+        "gold_page": anchor is not None,                       # right page?
+        "anchor_in_chunk": bool(anchor) and anchor.lower() in " ".join(h.text.split()).lower(),
+    }
 
 def main() -> None:
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     parser = argparse.ArgumentParser()
     parser.add_argument("--label", default="baseline", help="name of the results file")
     parser.add_argument("--k", type=int, default=max(CUTOFFS), help="how many chunks to retrieve per question")
+    parser.add_argument("--collection", default=config.COLLECTION, help="Qdrant collection to evaluate")
     args = parser.parse_args()
 
     questions = json.loads((HERE / "questions.json").read_text(encoding="utf-8"))
     per_question, answerable, unanswerable = [], [], []
 
     for q in questions:
-        hits = retrieve(q["question"], top_k=args.k)
+        hits = retrieve(q["question"], top_k=args.k, collection=args.collection)
         retrieved = [(h.source, h.page) for h in hits]
+        gold_pages = {(g["source"], g["page"]): g["anchor"] for g in q["gold"]}  # new
         entry = {
             "id": q["id"], "type": q["type"], "question": q["question"],
             "top_score": round(hits[0].score, 4) if hits else None,
-            "retrieved": [{"source": h.source, "page": h.page, "score": round(h.score, 4)} for h in hits],
+            "retrieved": [describe(i, h, gold_pages) for i, h in enumerate(hits, start=1)],
         }
         if q["gold"]:
             entry.update(score_question(q, retrieved))
@@ -76,11 +86,16 @@ def main() -> None:
         "unanswerable_top_scores": [r["top_score"] for r in unanswerable],
         "answerable_top_score_mean": round(mean([r["top_score"] for r in answerable]), 4),
     }
+    point = get_client().scroll(args.collection, limit=1, with_payload=True)[0][0]
     result = {
         "label": args.label,
         "time": datetime.now().isoformat(timespec="seconds"),
-        "settings": {"embed_model": config.EMBED_MODEL, "chunk_size": config.CHUNK_SIZE,
-                     "chunk_overlap": config.CHUNK_OVERLAP, "k": args.k},
+        "settings": {
+            "collection": args.collection,
+            "embed_model": config.EMBED_MODEL,
+            "chunk_size": point.payload.get("chunk_size"),
+            "chunk_overlap": point.payload.get("chunk_overlap"),
+            "k": args.k},
         "summary": summary,
         "questions": per_question,
     }

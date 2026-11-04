@@ -26,6 +26,7 @@ def main() -> None:
     parser.add_argument("--chunk-size", type=int, default=config.CHUNK_SIZE)
     parser.add_argument("--chunk-overlap", type=int, default=config.CHUNK_OVERLAP)
     parser.add_argument("--keep", action="store_true", help="add to the existing collection instead of rebuilding it")
+    parser.add_argument("--collection", default=config.COLLECTION)
     args = parser.parse_args()
 
     pdfs = sorted(args.data_dir.glob("*.pdf"), key=lambda p: p.name.lower())
@@ -35,13 +36,13 @@ def main() -> None:
 
     client = QdrantClient(url=config.QDRANT_URL)
     next_id = 0
-    if args.keep and client.collection_exists(config.COLLECTION):
-        next_id = client.count(config.COLLECTION, exact=True).count
+    if args.keep and client.collection_exists(args.collection):
+        next_id = client.count(args.collection, exact=True).count
     else:
-        if client.collection_exists(config.COLLECTION):
-            client.delete_collection(config.COLLECTION)
+        if client.collection_exists(args.collection):
+            client.delete_collection(args.collection)
         client.create_collection(
-            collection_name=config.COLLECTION,
+            collection_name=args.collection,
             vectors_config=VectorParams(size=embedding_dim(), distance=Distance.COSINE),
         )
 
@@ -56,13 +57,14 @@ def main() -> None:
             if len(text.strip()) < MIN_PAGE_CHARS:
                 continue
             for index, piece in enumerate(chunk_text(text, args.chunk_size, args.chunk_overlap)):
-                records.append({"source": pdf.name, "page": page_number, "chunk": index, "text": piece})
+                records.append({"source": pdf.name, "page": page_number, "chunk": index, "text": piece,
+                                "chunk_size": args.chunk_size, "chunk_overlap": args.chunk_overlap})
 
         for i in range(0, len(records), BATCH):
             batch = records[i:i + BATCH]
             vectors = embed_passages([r["text"] for r in batch])
             client.upsert(
-                collection_name=config.COLLECTION,
+                collection_name=args.collection,
                 points=[
                     PointStruct(id=next_id + j, vector=vec, payload=rec)
                     for j, (vec, rec) in enumerate(zip(vectors, batch))
@@ -73,8 +75,8 @@ def main() -> None:
         total_chunks += len(records)
         print(f"  {pdf.name:55} {pages:4} pages -> {len(records):5} chunks  ({time.time() - t0:5.1f}s)")
 
-    stored = client.count(config.COLLECTION, exact=True).count
-    print(f"Done: {total_chunks} chunks indexed, {stored} points in '{config.COLLECTION}', {time.time() - started:.0f}s total")
+    stored = client.count(args.collection, exact=True).count
+    print(f"Done: {total_chunks} chunks indexed, {stored} points in '{args.collection}', {time.time() - started:.0f}s total")
 
 
 if __name__ == "__main__":

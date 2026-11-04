@@ -1,6 +1,6 @@
 {
   "label": "baseline",
-  "time": "2026-10-22T14:30:26",
+  "time": "2026-11-02T11:54:27",
   "settings": {
     "embed_model": "BAAI/bge-small-en-v1.5",
     "chunk_size": 2000,
@@ -1787,12 +1787,12 @@
         },
         {
           "source": "canada-immigration-facts.pdf",
-          "page": 17,
+          "page": 19,
           "score": 0.6041
         },
         {
           "source": "canada-immigration-facts.pdf",
-          "page": 19,
+          "page": 17,
           "score": 0.6041
         },
         {

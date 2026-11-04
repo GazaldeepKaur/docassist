@@ -1,0 +1,3249 @@
+{
+  "label": "c500_50",
+  "time": "2026-11-03T11:32:58",
+  "settings": {
+    "collection": "docassist_500_50",
+    "embed_model": "BAAI/bge-small-en-v1.5",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "k": 10
+  },
+  "summary": {
+    "all_answerable": {
+      "n": 25,
+      "mrr": 0.764,
+      "hit@1": 0.72,
+      "cov@1": 0.623,
+      "hit@3": 0.76,
+      "cov@3": 0.737,
+      "hit@5": 0.88,
+      "cov@5": 0.83,
+      "hit@10": 0.92,
+      "cov@10": 0.84
+    },
+    "direct": {
+      "n": 20,
+      "mrr": 0.787,
+      "hit@1": 0.75,
+      "cov@1": 0.725,
+      "hit@3": 0.8,
+      "cov@3": 0.8,
+      "hit@5": 0.9,
+      "cov@5": 0.9,
+      "hit@10": 0.9,
+      "cov@10": 0.9
+    },
+    "multi": {
+      "n": 5,
+      "mrr": 0.672,
+      "hit@1": 0.6,
+      "cov@1": 0.217,
+      "hit@3": 0.6,
+      "cov@3": 0.483,
+      "hit@5": 0.8,
+      "cov@5": 0.55,
+      "hit@10": 1.0,
+      "cov@10": 0.6
+    },
+    "unanswerable_top_scores": [
+      0.6292,
+      0.7631,
+      0.6906,
+      0.6127,
+      0.6849
+    ],
+    "answerable_top_score_mean": 0.803
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "type": "direct",
+      "question": "Do I have to give my SIN when I apply for a job?",
+      "top_score": 0.8136,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 1,
+          "score": 0.8136,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 0,
+          "score": 0.7891,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 2,
+          "score": 0.7858,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "protect_SIN.pdf",
+          "page": 2,
+          "chunk": 2,
+          "score": 0.7474,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.7431,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.7391,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "chunk": 2,
+          "score": 0.7345,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.7293,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 4,
+          "score": 0.7063,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 1,
+          "score": 0.7052,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q02",
+      "type": "direct",
+      "question": "What phone number do I call to report SIN fraud to the Canadian Anti-Fraud Centre?",
+      "top_score": 0.8071,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 0,
+          "score": 0.8071,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "protect_SIN.pdf",
+          "page": 6,
+          "chunk": 0,
+          "score": 0.785,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "fraud_newcomers.pdf",
+          "page": 2,
+          "chunk": 0,
+          "score": 0.7758,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 1,
+          "score": 0.7711,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 1,
+          "score": 0.7638,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "chunk": 0,
+          "score": 0.7543,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.7497,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "fraud_newcomers.pdf",
+          "page": 2,
+          "chunk": 5,
+          "score": 0.7443,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 2,
+          "chunk": 0,
+          "score": 0.7421,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 2,
+          "score": 0.7411,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q03",
+      "type": "direct",
+      "question": "How do I apply for a Social Insurance Number for my newborn baby?",
+      "top_score": 0.8033,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.8033,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.8015,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "chunk": 6,
+          "score": 0.7474,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "apply_SIN.pdf",
+          "page": 5,
+          "chunk": 2,
+          "score": 0.7314,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "chunk": 7,
+          "score": 0.7311,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.7262,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "chunk": 1,
+          "score": 0.7186,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "chunk": 5,
+          "score": 0.7081,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7069,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "ccb-2025.pdf",
+          "page": 2,
+          "chunk": 2,
+          "score": 0.6956,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q04",
+      "type": "direct",
+      "question": "Can I apply for a SIN by mail instead of going in person?",
+      "top_score": 0.757,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 1,
+          "score": 0.757,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "protect_SIN.pdf",
+          "page": 2,
+          "chunk": 2,
+          "score": 0.7424,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.7337,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 1,
+          "score": 0.7236,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.7229,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 4,
+          "score": 0.7212,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "chunk": 2,
+          "score": 0.718,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.7166,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 1,
+          "score": 0.716,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.714,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 5,
+      "rr": 0.2,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q05",
+      "type": "direct",
+      "question": "Which documents must a temporary resident show to get a SIN?",
+      "top_score": 0.8004,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "welcome.pdf",
+          "page": 47,
+          "chunk": 4,
+          "score": 0.8004,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 1,
+          "score": 0.7534,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "chunk": 4,
+          "score": 0.7486,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.7212,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.72,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 1,
+          "score": 0.7171,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "canada-immigration-facts.pdf",
+          "page": 19,
+          "chunk": 3,
+          "score": 0.7169,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "SIN_directive.pdf",
+          "page": 7,
+          "chunk": 2,
+          "score": 0.712,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "chunk": 2,
+          "score": 0.7096,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.7092,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": null,
+      "rr": 0.0,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.0,
+      "cov@10": 0.0
+    },
+    {
+      "id": "q06",
+      "type": "direct",
+      "question": "What do I need if my SIN document is in another language and has been translated?",
+      "top_score": 0.7667,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.7667,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "welcome.pdf",
+          "page": 11,
+          "chunk": 3,
+          "score": 0.7621,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "apply_SIN.pdf",
+          "page": 5,
+          "chunk": 0,
+          "score": 0.7448,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 47,
+          "chunk": 4,
+          "score": 0.7439,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "chunk": 4,
+          "score": 0.7306,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "apply_SIN.pdf",
+          "page": 3,
+          "chunk": 3,
+          "score": 0.725,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 1,
+          "score": 0.7221,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 11,
+          "chunk": 4,
+          "score": 0.7168,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.7161,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 4,
+          "score": 0.711,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 3,
+      "rr": 0.3333333333333333,
+      "hit@1": 0.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q07",
+      "type": "direct",
+      "question": "What does a legal guardian need to provide to apply for a child's SIN?",
+      "top_score": 0.7732,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 0,
+          "score": 0.7732,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 1,
+          "score": 0.7704,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.7574,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 1,
+          "score": 0.7395,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.7115,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7018,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 2,
+          "score": 0.6992,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 0,
+          "score": 0.6841,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "SIN_directive.pdf",
+          "page": 8,
+          "chunk": 0,
+          "score": 0.6839,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 42,
+          "chunk": 3,
+          "score": 0.6824,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q08",
+      "type": "direct",
+      "question": "Which documents can a Canadian citizen use as proof when applying for a SIN?",
+      "top_score": 0.8413,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "welcome.pdf",
+          "page": 47,
+          "chunk": 4,
+          "score": 0.8413,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.8228,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 1,
+          "score": 0.7982,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 1,
+          "score": 0.7847,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "apply_SIN.pdf",
+          "page": 2,
+          "chunk": 2,
+          "score": 0.7679,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "protect_SIN.pdf",
+          "page": 4,
+          "chunk": 4,
+          "score": 0.7668,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "protect_SIN.pdf",
+          "page": 5,
+          "chunk": 2,
+          "score": 0.7634,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.762,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 2,
+          "score": 0.7554,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.7503,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 5,
+      "rr": 0.2,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q09",
+      "type": "direct",
+      "question": "Who is allowed to give paid immigration advice in Canada?",
+      "top_score": 0.8088,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.8088,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "welcome.pdf",
+          "page": 69,
+          "chunk": 2,
+          "score": 0.7453,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7318,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "employer-roadmap-en.pdf",
+          "page": 29,
+          "chunk": 1,
+          "score": 0.7275,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "welcome.pdf",
+          "page": 27,
+          "chunk": 1,
+          "score": 0.7238,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.7226,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 40,
+          "chunk": 1,
+          "score": 0.7173,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.7142,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "chunk": 6,
+          "score": 0.7077,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 68,
+          "chunk": 3,
+          "score": 0.706,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q10",
+      "type": "direct",
+      "question": "What can happen to me if I use an unlicensed immigration consultant?",
+      "top_score": 0.8295,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.8295,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7947,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.7866,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 4,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.7664,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 4,
+          "score": 0.69,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.6832,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.669,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 103,
+          "chunk": 1,
+          "score": 0.6516,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 44,
+          "chunk": 2,
+          "score": 0.6453,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "canada-health-act-2025.pdf",
+          "page": 86,
+          "chunk": 2,
+          "score": 0.6269,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q11",
+      "type": "direct",
+      "question": "Will IRCC ever phone me to collect fees or fines?",
+      "top_score": 0.7448,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.7448,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.6876,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.6636,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.6526,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 4,
+          "score": 0.6513,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "canada-health-act-2025.pdf",
+          "page": 96,
+          "chunk": 4,
+          "score": 0.6448,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "canada-health-act-2025.pdf",
+          "page": 119,
+          "chunk": 4,
+          "score": 0.6374,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "canada-health-act-2025.pdf",
+          "page": 267,
+          "chunk": 1,
+          "score": 0.6333,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "canada-health-act-2025.pdf",
+          "page": 359,
+          "chunk": 2,
+          "score": 0.6315,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "canada-health-act-2025.pdf",
+          "page": 353,
+          "chunk": 1,
+          "score": 0.6314,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q12",
+      "type": "direct",
+      "question": "On what day of the month is the Canada Child Benefit usually paid?",
+      "top_score": 0.7715,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "ccb-2025.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7715,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "ccb-2025.pdf",
+          "page": 11,
+          "chunk": 2,
+          "score": 0.7616,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "chunk": 1,
+          "score": 0.7598,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "ccb-2025.pdf",
+          "page": 8,
+          "chunk": 6,
+          "score": 0.7553,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "chunk": 2,
+          "score": 0.752,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "chunk": 4,
+          "score": 0.741,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "ccb-2025.pdf",
+          "page": 8,
+          "chunk": 4,
+          "score": 0.7407,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "chunk": 3,
+          "score": 0.7337,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "ccb-2025.pdf",
+          "page": 11,
+          "chunk": 7,
+          "score": 0.7333,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "ccb-2025.pdf",
+          "page": 14,
+          "chunk": 5,
+          "score": 0.729,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": null,
+      "rr": 0.0,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.0,
+      "cov@10": 0.0
+    },
+    {
+      "id": "q13",
+      "type": "direct",
+      "question": "By when do I have to tell the CRA that my marital status has changed?",
+      "top_score": 0.8543,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "ccb-2025.pdf",
+          "page": 13,
+          "chunk": 0,
+          "score": 0.8543,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "ccb-2025.pdf",
+          "page": 13,
+          "chunk": 1,
+          "score": 0.8251,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "ccb-2025.pdf",
+          "page": 2,
+          "chunk": 7,
+          "score": 0.7628,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "ccb-2025.pdf",
+          "page": 9,
+          "chunk": 7,
+          "score": 0.7622,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "ccb-2025.pdf",
+          "page": 8,
+          "chunk": 0,
+          "score": 0.7419,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "chunk": 8,
+          "score": 0.7329,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "ccb-2025.pdf",
+          "page": 9,
+          "chunk": 6,
+          "score": 0.7304,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "chunk": 6,
+          "score": 0.7244,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "chunk": 7,
+          "score": 0.7211,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "ccb-2025.pdf",
+          "page": 13,
+          "chunk": 2,
+          "score": 0.7209,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q14",
+      "type": "direct",
+      "question": "What is the deadline for filing my income tax return in Canada?",
+      "top_score": 0.8185,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "welcome.pdf",
+          "page": 108,
+          "chunk": 0,
+          "score": 0.8185,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "welcome.pdf",
+          "page": 107,
+          "chunk": 4,
+          "score": 0.772,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 107,
+          "chunk": 3,
+          "score": 0.7564,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 108,
+          "chunk": 3,
+          "score": 0.7303,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "ccb-2025.pdf",
+          "page": 14,
+          "chunk": 6,
+          "score": 0.7285,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "ccb-2025.pdf",
+          "page": 8,
+          "chunk": 4,
+          "score": 0.7196,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "ccb-2025.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7165,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "ccb-2025.pdf",
+          "page": 13,
+          "chunk": 6,
+          "score": 0.7102,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "ccb-2025.pdf",
+          "page": 9,
+          "chunk": 8,
+          "score": 0.7029,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 69,
+          "chunk": 2,
+          "score": 0.7001,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q15",
+      "type": "direct",
+      "question": "What rights will I have if I become a Canadian citizen?",
+      "top_score": 0.8729,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "welcome.pdf",
+          "page": 37,
+          "chunk": 0,
+          "score": 0.8729,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "welcome.pdf",
+          "page": 36,
+          "chunk": 2,
+          "score": 0.8142,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 137,
+          "chunk": 1,
+          "score": 0.8116,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 137,
+          "chunk": 0,
+          "score": 0.807,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "canada-immigration-facts.pdf",
+          "page": 59,
+          "chunk": 8,
+          "score": 0.7957,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 137,
+          "chunk": 3,
+          "score": 0.7857,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 13,
+          "chunk": 3,
+          "score": 0.7777,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "chunk": 3,
+          "score": 0.7613,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 35,
+          "chunk": 2,
+          "score": 0.76,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 35,
+          "chunk": 3,
+          "score": 0.7576,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q16",
+      "type": "direct",
+      "question": "Is it legal to drive in Canada without car insurance?",
+      "top_score": 0.8845,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "welcome.pdf",
+          "page": 124,
+          "chunk": 0,
+          "score": 0.8845,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "welcome.pdf",
+          "page": 122,
+          "chunk": 0,
+          "score": 0.8054,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 124,
+          "chunk": 2,
+          "score": 0.7817,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 125,
+          "chunk": 5,
+          "score": 0.7789,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "welcome.pdf",
+          "page": 8,
+          "chunk": 0,
+          "score": 0.7417,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 122,
+          "chunk": 1,
+          "score": 0.7369,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 124,
+          "chunk": 4,
+          "score": 0.7331,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 118,
+          "chunk": 3,
+          "score": 0.7282,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 125,
+          "chunk": 4,
+          "score": 0.7275,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 125,
+          "chunk": 3,
+          "score": 0.7047,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q17",
+      "type": "direct",
+      "question": "How many benchmarks does the Canadian Language Benchmarks scale have?",
+      "top_score": 0.8259,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "language-benchmarks.pdf",
+          "page": 16,
+          "chunk": 0,
+          "score": 0.8259,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "language-benchmarks.pdf",
+          "page": 20,
+          "chunk": 0,
+          "score": 0.8112,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "language-benchmarks.pdf",
+          "page": 11,
+          "chunk": 1,
+          "score": 0.8002,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "language-benchmarks.pdf",
+          "page": 18,
+          "chunk": 0,
+          "score": 0.7928,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "language-benchmarks.pdf",
+          "page": 22,
+          "chunk": 0,
+          "score": 0.7909,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "language-benchmarks.pdf",
+          "page": 185,
+          "chunk": 0,
+          "score": 0.7804,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "language-benchmarks.pdf",
+          "page": 11,
+          "chunk": 0,
+          "score": 0.7785,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 8,
+          "source": "language-benchmarks.pdf",
+          "page": 217,
+          "chunk": 0,
+          "score": 0.7778,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "language-benchmarks.pdf",
+          "page": 2,
+          "chunk": 0,
+          "score": 0.7774,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "language-benchmarks.pdf",
+          "page": 11,
+          "chunk": 2,
+          "score": 0.7772,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.5,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q18",
+      "type": "direct",
+      "question": "Can a permanent resident work for any employer in Canada?",
+      "top_score": 0.8827,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "employer-roadmap-en.pdf",
+          "page": 6,
+          "chunk": 0,
+          "score": 0.8827,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "canada-immigration-facts.pdf",
+          "page": 62,
+          "chunk": 5,
+          "score": 0.7764,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "employer-roadmap-en.pdf",
+          "page": 25,
+          "chunk": 0,
+          "score": 0.7648,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "employer-roadmap-en.pdf",
+          "page": 16,
+          "chunk": 3,
+          "score": 0.7582,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "canada-health-act-2025.pdf",
+          "page": 83,
+          "chunk": 1,
+          "score": 0.7522,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "canada-immigration-facts.pdf",
+          "page": 62,
+          "chunk": 4,
+          "score": 0.7402,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "canada-immigration-facts.pdf",
+          "page": 58,
+          "chunk": 0,
+          "score": 0.7388,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "canada-health-act-2025.pdf",
+          "page": 196,
+          "chunk": 5,
+          "score": 0.738,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "canada-immigration-facts.pdf",
+          "page": 59,
+          "chunk": 2,
+          "score": 0.7342,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "canada-health-act-2025.pdf",
+          "page": 49,
+          "chunk": 0,
+          "score": 0.7334,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q19",
+      "type": "direct",
+      "question": "Why do privacy commissioners say retailers do not need to record a customer's driver's licence number?",
+      "top_score": 0.7967,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 5,
+          "chunk": 1,
+          "score": 0.7967,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 3,
+          "chunk": 1,
+          "score": 0.7928,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 5,
+          "chunk": 2,
+          "score": 0.7878,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 7,
+          "chunk": 1,
+          "score": 0.7741,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 4,
+          "chunk": 3,
+          "score": 0.7728,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 5,
+          "chunk": 0,
+          "score": 0.7714,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 7,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 2,
+          "chunk": 1,
+          "score": 0.7477,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 7,
+          "chunk": 3,
+          "score": 0.7434,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7353,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "licence-guide-for-retailers.pdf",
+          "page": 6,
+          "chunk": 0,
+          "score": 0.7348,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q20",
+      "type": "direct",
+      "question": "Who can apply for an open work permit because of abuse at work?",
+      "top_score": 0.8132,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "chunk": 5,
+          "score": 0.8132,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7499,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 3,
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "chunk": 4,
+          "score": 0.697,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.6899,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "employer-roadmap-en.pdf",
+          "page": 6,
+          "chunk": 1,
+          "score": 0.6496,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.6473,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "open-work-permit.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.6435,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "canada-health-act-2025.pdf",
+          "page": 132,
+          "chunk": 0,
+          "score": 0.6427,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "canada-health-act-2025.pdf",
+          "page": 196,
+          "chunk": 5,
+          "score": 0.6417,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 43,
+          "chunk": 1,
+          "score": 0.6361,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 1.0,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q21",
+      "type": "multi",
+      "question": "What documents do I need to apply for a Social Insurance Number?",
+      "top_score": 0.7921,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.7921,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "apply_SIN.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.7853,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 59,
+          "chunk": 1,
+          "score": 0.7731,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 49,
+          "chunk": 2,
+          "score": 0.7687,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "ccb-2025.pdf",
+          "page": 2,
+          "chunk": 3,
+          "score": 0.7681,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 109,
+          "chunk": 4,
+          "score": 0.7405,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 14,
+          "chunk": 1,
+          "score": 0.7393,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "apply_SIN.pdf",
+          "page": 4,
+          "chunk": 0,
+          "score": 0.7358,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 47,
+          "chunk": 3,
+          "score": 0.7339,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "chunk": 4,
+          "score": 0.7319,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 9,
+      "rr": 0.1111111111111111,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.0,
+      "cov@10": 0.25
+    },
+    {
+      "id": "q22",
+      "type": "multi",
+      "question": "How can I protect myself from fraud and scams as a newcomer?",
+      "top_score": 0.7095,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.7095,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.6974,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "fraud_newcomers.pdf",
+          "page": 2,
+          "chunk": 5,
+          "score": 0.687,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 113,
+          "chunk": 1,
+          "score": 0.6803,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "welcome.pdf",
+          "page": 114,
+          "chunk": 2,
+          "score": 0.6758,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 113,
+          "chunk": 0,
+          "score": 0.6738,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.6735,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 113,
+          "chunk": 3,
+          "score": 0.6607,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 128,
+          "chunk": 6,
+          "score": 0.6599,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "protect_SIN.pdf",
+          "page": 6,
+          "chunk": 0,
+          "score": 0.6597,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.25,
+      "cov@3": 0.75,
+      "cov@5": 0.75,
+      "cov@10": 0.75
+    },
+    {
+      "id": "q23",
+      "type": "multi",
+      "question": "When should I give out my SIN and when can I refuse?",
+      "top_score": 0.7679,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "protect_SIN.pdf",
+          "page": 2,
+          "chunk": 2,
+          "score": 0.7679,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 1,
+          "score": 0.7371,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 4,
+          "score": 0.6981,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 0,
+          "score": 0.6875,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 5,
+          "source": "protect_SIN.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.6845,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 2,
+          "score": 0.6843,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 48,
+          "chunk": 2,
+          "score": 0.6824,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "SIN_directive.pdf",
+          "page": 8,
+          "chunk": 0,
+          "score": 0.682,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "protect_SIN.pdf",
+          "page": 3,
+          "chunk": 3,
+          "score": 0.6679,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "apply_newborn_SIN.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.6593,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.3333333333333333,
+      "cov@3": 0.6666666666666666,
+      "cov@5": 0.6666666666666666,
+      "cov@10": 0.6666666666666666
+    },
+    {
+      "id": "q24",
+      "type": "multi",
+      "question": "Who can I trust to help with my immigration application, and who should I avoid?",
+      "top_score": 0.7195,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 2,
+          "score": 0.7195,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 2,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 4,
+          "score": 0.6924,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.6872,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 4,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 3,
+          "score": 0.6747,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "3247-a-factsheet-unlicensed-consultant-eng.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.6742,
+          "gold_page": true,
+          "anchor_in_chunk": true
+        },
+        {
+          "rank": 6,
+          "source": "fraud_newcomers.pdf",
+          "page": 1,
+          "chunk": 1,
+          "score": 0.6707,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "employer-roadmap-en.pdf",
+          "page": 16,
+          "chunk": 5,
+          "score": 0.6684,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 4,
+          "score": 0.662,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "3247-b-factsheet-do-it-right-eng.pdf",
+          "page": 1,
+          "chunk": 0,
+          "score": 0.6573,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 68,
+          "chunk": 3,
+          "score": 0.6558,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 1,
+      "rr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.5,
+      "cov@3": 1.0,
+      "cov@5": 1.0,
+      "cov@10": 1.0
+    },
+    {
+      "id": "q25",
+      "type": "multi",
+      "question": "What health coverage will I have as a newcomer and what does the Canada Health Act require of provincial plans?",
+      "top_score": 0.8192,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "canada-health-act-2025.pdf",
+          "page": 315,
+          "chunk": 0,
+          "score": 0.8192,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "canada-health-act-2025.pdf",
+          "page": 315,
+          "chunk": 1,
+          "score": 0.8041,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "canada-health-act-2025.pdf",
+          "page": 21,
+          "chunk": 4,
+          "score": 0.8012,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "canada-health-act-2025.pdf",
+          "page": 15,
+          "chunk": 3,
+          "score": 0.7991,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "canada-health-act-2025.pdf",
+          "page": 15,
+          "chunk": 1,
+          "score": 0.7959,
+          "gold_page": true,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "canada-health-act-2025.pdf",
+          "page": 23,
+          "chunk": 2,
+          "score": 0.7957,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "canada-health-act-2025.pdf",
+          "page": 224,
+          "chunk": 0,
+          "score": 0.7948,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 99,
+          "chunk": 2,
+          "score": 0.7947,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "canada-health-act-2025.pdf",
+          "page": 21,
+          "chunk": 0,
+          "score": 0.7943,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "canada-health-act-2025.pdf",
+          "page": 82,
+          "chunk": 2,
+          "score": 0.7922,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ],
+      "first_hit_rank": 4,
+      "rr": 0.25,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "cov@1": 0.0,
+      "cov@3": 0.0,
+      "cov@5": 0.3333333333333333,
+      "cov@10": 0.3333333333333333
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "question": "What is the minimum Express Entry CRS score needed to get an invitation?",
+      "top_score": 0.6292,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "canada-immigration-facts.pdf",
+          "page": 12,
+          "chunk": 6,
+          "score": 0.6292,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "canada-immigration-facts.pdf",
+          "page": 14,
+          "chunk": 2,
+          "score": 0.6281,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "canada-immigration-facts.pdf",
+          "page": 12,
+          "chunk": 2,
+          "score": 0.6236,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "canada-immigration-facts.pdf",
+          "page": 14,
+          "chunk": 6,
+          "score": 0.623,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "canada-immigration-facts.pdf",
+          "page": 13,
+          "chunk": 5,
+          "score": 0.617,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "ccb-2025.pdf",
+          "page": 7,
+          "chunk": 6,
+          "score": 0.6111,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "canada-immigration-facts.pdf",
+          "page": 16,
+          "chunk": 2,
+          "score": 0.6082,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "canada-immigration-facts.pdf",
+          "page": 17,
+          "chunk": 4,
+          "score": 0.6068,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "canada-health-act-2025.pdf",
+          "page": 98,
+          "chunk": 5,
+          "score": 0.6038,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "canada-immigration-facts.pdf",
+          "page": 19,
+          "chunk": 4,
+          "score": 0.603,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ]
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "question": "How much does it cost to apply for Canadian citizenship?",
+      "top_score": 0.7631,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "welcome.pdf",
+          "page": 137,
+          "chunk": 1,
+          "score": 0.7631,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "welcome.pdf",
+          "page": 137,
+          "chunk": 0,
+          "score": 0.7355,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 136,
+          "chunk": 0,
+          "score": 0.7208,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "canada-health-act-2025.pdf",
+          "page": 51,
+          "chunk": 4,
+          "score": 0.7195,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "chunk": 4,
+          "score": 0.7168,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 69,
+          "chunk": 2,
+          "score": 0.7167,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "ccb-2025.pdf",
+          "page": 6,
+          "chunk": 3,
+          "score": 0.7151,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 37,
+          "chunk": 0,
+          "score": 0.7048,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 137,
+          "chunk": 3,
+          "score": 0.7002,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "ccb-2025.pdf",
+          "page": 12,
+          "chunk": 0,
+          "score": 0.6997,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ]
+    },
+    {
+      "id": "q28",
+      "type": "unanswerable",
+      "question": "What is the current minimum wage in Ontario?",
+      "top_score": 0.6906,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "canada-health-act-2025.pdf",
+          "page": 132,
+          "chunk": 2,
+          "score": 0.6906,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "canada-health-act-2025.pdf",
+          "page": 147,
+          "chunk": 0,
+          "score": 0.6895,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "canada-health-act-2025.pdf",
+          "page": 122,
+          "chunk": 0,
+          "score": 0.6864,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "canada-immigration-facts.pdf",
+          "page": 19,
+          "chunk": 1,
+          "score": 0.6826,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "canada-health-act-2025.pdf",
+          "page": 146,
+          "chunk": 0,
+          "score": 0.6818,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "canada-immigration-facts.pdf",
+          "page": 17,
+          "chunk": 1,
+          "score": 0.6737,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "canada-health-act-2025.pdf",
+          "page": 123,
+          "chunk": 2,
+          "score": 0.6688,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "canada-immigration-facts.pdf",
+          "page": 56,
+          "chunk": 0,
+          "score": 0.6676,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "canada-health-act-2025.pdf",
+          "page": 28,
+          "chunk": 4,
+          "score": 0.6671,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "canada-health-act-2025.pdf",
+          "page": 133,
+          "chunk": 0,
+          "score": 0.6607,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ]
+    },
+    {
+      "id": "q29",
+      "type": "unanswerable",
+      "question": "Who won the hockey game last night?",
+      "top_score": 0.6127,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "canada-immigration-facts.pdf",
+          "page": 38,
+          "chunk": 3,
+          "score": 0.6127,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "canada-immigration-facts.pdf",
+          "page": 39,
+          "chunk": 1,
+          "score": 0.6085,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "canada-immigration-facts.pdf",
+          "page": 38,
+          "chunk": 1,
+          "score": 0.5922,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "canada-immigration-facts.pdf",
+          "page": 38,
+          "chunk": 2,
+          "score": 0.5912,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "canada-immigration-facts.pdf",
+          "page": 43,
+          "chunk": 4,
+          "score": 0.5856,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "canada-immigration-facts.pdf",
+          "page": 43,
+          "chunk": 6,
+          "score": 0.5701,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "canada-immigration-facts.pdf",
+          "page": 39,
+          "chunk": 2,
+          "score": 0.569,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 85,
+          "chunk": 4,
+          "score": 0.5543,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 134,
+          "chunk": 2,
+          "score": 0.5534,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "canada-immigration-facts.pdf",
+          "page": 38,
+          "chunk": 4,
+          "score": 0.5511,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ]
+    },
+    {
+      "id": "q30",
+      "type": "unanswerable",
+      "question": "What is the best mortgage interest rate available right now?",
+      "top_score": 0.6849,
+      "retrieved": [
+        {
+          "rank": 1,
+          "source": "welcome.pdf",
+          "page": 95,
+          "chunk": 1,
+          "score": 0.6849,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 2,
+          "source": "welcome.pdf",
+          "page": 96,
+          "chunk": 1,
+          "score": 0.6627,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 3,
+          "source": "welcome.pdf",
+          "page": 95,
+          "chunk": 0,
+          "score": 0.6262,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 4,
+          "source": "welcome.pdf",
+          "page": 115,
+          "chunk": 1,
+          "score": 0.6132,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 5,
+          "source": "welcome.pdf",
+          "page": 95,
+          "chunk": 2,
+          "score": 0.6121,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 6,
+          "source": "welcome.pdf",
+          "page": 96,
+          "chunk": 0,
+          "score": 0.6028,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 7,
+          "source": "welcome.pdf",
+          "page": 96,
+          "chunk": 3,
+          "score": 0.5975,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 8,
+          "source": "welcome.pdf",
+          "page": 95,
+          "chunk": 3,
+          "score": 0.5931,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 9,
+          "source": "welcome.pdf",
+          "page": 6,
+          "chunk": 2,
+          "score": 0.5876,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        },
+        {
+          "rank": 10,
+          "source": "welcome.pdf",
+          "page": 96,
+          "chunk": 2,
+          "score": 0.585,
+          "gold_page": false,
+          "anchor_in_chunk": false
+        }
+      ]
+    }
+  ]
+}
