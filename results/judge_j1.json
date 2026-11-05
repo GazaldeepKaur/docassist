@@ -1,6 +1,6 @@
 {
   "label": "j1",
-  "time": "2026-11-04T10:29:34",
+  "time": "2026-11-04T13:20:27",
   "settings": {
     "collection": "docassist_1000_100",
     "k": 5,
@@ -10,7 +10,7 @@
   "summary": {
     "n_answerable": 25,
     "avg_correctness_0_to_2": 1.68,
-    "fully_correct_pct": 80.0,
+    "fully_correct_pct": 84.0,
     "grounded_pct_of_answered": 87.5,
     "valid_citations_pct_of_answered": 87.5,
     "false_abstention_pct": 4.0,
@@ -47,7 +47,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The answer correctly provides the phone number 1-888-495-8501 for reporting SIN fraud to the Canadian Anti-Fraud Centre, which is supported by the retrieved context from page 4 of the document."
+      "reason": "The answer correctly provides the phone number to report SIN fraud to the Canadian Anti-Fraud Centre, and this information is supported by the retrieved context from page 4 of the document."
     },
     {
       "id": "q03",
@@ -62,7 +62,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The answer correctly explains the process of applying for a newborn's SIN and is fully supported by the retrieved context."
+      "reason": "The assistant's answer is correct and complete according to the REFERENCE and all factual claims are supported by the RETRIEVED CONTEXT."
     },
     {
       "id": "q04",
@@ -77,7 +77,7 @@
       },
       "correctness": 0,
       "grounded": false,
-      "reason": "The answer only addresses applying by mail for those not living in Canada, missing the conditions for those living in Canada."
+      "reason": "The answer only addresses applying by mail for those not living in Canada, missing the conditions for those living in Canada, which are covered in the reference."
     },
     {
       "id": "q05",
@@ -92,7 +92,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The assistant's answer correctly lists all the required documents for a temporary resident to obtain a SIN, and all claims are supported by the retrieved context."
+      "reason": "The assistant's answer correctly lists all the documents a temporary resident must provide to get a SIN, and all claims are supported by the retrieved context."
     },
     {
       "id": "q06",
@@ -107,7 +107,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The assistant's answer correctly states the requirements for translated SIN documents and is fully supported by the retrieved context."
+      "reason": "The answer correctly states the requirements for translated SIN documents and is fully supported by the retrieved context."
     },
     {
       "id": "q07",
@@ -152,7 +152,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The answer correctly identifies the authorized groups and is fully supported by the retrieved context."
+      "reason": "The answer correctly identifies who can give paid immigration advice in Canada and is fully supported by the retrieved context."
     },
     {
       "id": "q10",
@@ -167,7 +167,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The assistant's answer accurately reflects the information provided in the retrieved context, detailing the consequences of using an unlicensed immigration consultant."
+      "reason": "The answer correctly lists the consequences of using an unlicensed immigration consultant as stated in the retrieved context."
     },
     {
       "id": "q11",
@@ -182,7 +182,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The assistant's answer is correct and complete according to the REFERENCE and all factual claims are supported by the RETRIEVED CONTEXT."
+      "reason": "The answer correctly states that IRCC will not phone to collect fees or fines and is fully supported by the retrieved context from fraud_newcomers.pdf, page 1."
     },
     {
       "id": "q12",
@@ -197,7 +197,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The answer correctly states that the Canada Child Benefit is generally paid on the 20th of each month, which is supported by the retrieved context."
+      "reason": "The answer correctly states that the Canada Child Benefit is generally paid on the 20th of each month, which is supported by the retrieved context from page 9 of the document."
     },
     {
       "id": "q13",
@@ -227,7 +227,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The answer correctly states the deadline as April 30 and is supported by the retrieved context from page 108 of the document."
+      "reason": "The answer correctly states the deadline for filing a tax return in Canada as April 30, which is supported by the retrieved context."
     },
     {
       "id": "q15",
@@ -240,9 +240,9 @@
         "invalid": [],
         "valid": true
       },
-      "correctness": 1,
+      "correctness": 2,
       "grounded": true,
-      "reason": "The assistant answer correctly lists the rights of Canadian citizens as per the reference, but it omits the duty to serve on a jury and the civic responsibility to vote."
+      "reason": "The assistant's answer correctly lists the rights of Canadian citizens as stated in the REFERENCE and is fully supported by the RETRIEVED CONTEXT."
     },
     {
       "id": "q16",
@@ -257,7 +257,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The answer correctly states that it is strictly illegal to drive without car insurance in Canada, which is supported by the retrieved context from page 124 of the document."
+      "reason": "The answer correctly states that it is illegal to drive without car insurance in Canada, which is supported by the retrieved context."
     },
     {
       "id": "q17",
@@ -302,7 +302,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The assistant's answer is correct and complete, and all factual claims are supported by the retrieved context."
+      "reason": "The assistant's answer correctly states that privacy commissioners concluded that recording a driver's licence number is unjustified and provides reasons supported by the retrieved context."
     },
     {
       "id": "q20",
@@ -330,9 +330,9 @@
         "invalid": [],
         "valid": true
       },
-      "correctness": 1,
+      "correctness": 0,
       "grounded": false,
-      "reason": "The answer is partly correct as it mentions the need for a primary document and possibly a supporting document, but it lacks specific examples of acceptable documents. The grounding is false because the specific examples of documents are not supported by the retrieved context."
+      "reason": "The answer does not specify the exact documents needed for different statuses (Canadian citizens, permanent residents, temporary residents) as detailed in the REFERENCE."
     },
     {
       "id": "q22",
@@ -347,7 +347,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The assistant's answer is correct and complete, covering all key points from the retrieved context about protecting against fraud and scams as a newcomer."
+      "reason": "The assistant's answer is correct and complete, covering all key points from the retrieved context, and all factual claims are supported by the retrieved context."
     },
     {
       "id": "q23",
@@ -377,7 +377,7 @@
       },
       "correctness": 2,
       "grounded": true,
-      "reason": "The answer correctly identifies that licensed representatives authorized by the College of Immigration and Citizenship Consultants can be trusted, and unlicensed consultants should be avoided, which is supported by the retrieved context."
+      "reason": "The answer correctly identifies licensed representatives as trustworthy and unlicensed consultants as those to avoid, supported by the retrieved context."
     },
     {
       "id": "q25",

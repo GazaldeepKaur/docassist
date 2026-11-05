@@ -15,7 +15,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** You can report SIN fraud to the Canadian Anti-Fraud Centre by calling 1-888-495-8501 [protect_SIN.pdf, page 4].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer correctly provides the phone number 1-888-495-8501 for reporting SIN fraud to the Canadian Anti-Fraud Centre, which is supported by the retrieved context from page 4 of the document.
+- judge reason: The answer correctly provides the phone number to report SIN fraud to the Canadian Anti-Fraud Centre, and this information is supported by the retrieved context from page 4 of the document.
 - gold: [('protect_SIN.pdf', 4)]
 
 ## q03 (direct): How do I apply for a Social Insurance Number for my newborn baby?
@@ -23,7 +23,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** To apply for your newborn's Social Insurance Number (SIN), you need to sign the “Request for a Social Insurance Number for My Child” section at the bottom of the Registration of Birth form. Once completed, this section serves as the SIN application for your child. The information will be sent to Service Canada after the birth is registered, and Service Canada will then mail you your child's SIN. The SIN record will reflect your child's name as it appears on the Registration of Birth form [apply_newborn_SIN.pdf, page 1].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer correctly explains the process of applying for a newborn's SIN and is fully supported by the retrieved context.
+- judge reason: The assistant's answer is correct and complete according to the REFERENCE and all factual claims are supported by the RETRIEVED CONTEXT.
 - gold: [('apply_newborn_SIN.pdf', 1)]
 
 ## q04 (direct): Can I apply for a SIN by mail instead of going in person?
@@ -31,7 +31,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** Yes, if you do not live in Canada, you are eligible to apply by mail using the “Application for a Social Insurance Number - Information Guide for Applicants” form [apply_SIN.pdf, page 1].
 
 - correctness: 0  | grounded: False  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer only addresses applying by mail for those not living in Canada, missing the conditions for those living in Canada.
+- judge reason: The answer only addresses applying by mail for those not living in Canada, missing the conditions for those living in Canada, which are covered in the reference.
 - gold: [('apply_SIN.pdf', 1)]
 
 ## q05 (direct): Which documents must a temporary resident show to get a SIN?
@@ -43,7 +43,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 - A diplomatic identity card and a work authorization [apply_SIN.pdf, page 3].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The assistant's answer correctly lists all the required documents for a temporary resident to obtain a SIN, and all claims are supported by the retrieved context.
+- judge reason: The assistant's answer correctly lists all the documents a temporary resident must provide to get a SIN, and all claims are supported by the retrieved context.
 - gold: [('apply_SIN.pdf', 3)]
 
 ## q06 (direct): What do I need if my SIN document is in another language and has been translated?
@@ -51,7 +51,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** If your SIN document is in another language and has been translated, you need to submit a certified translation along with an attestation from a certified translator stating that the translation is a true and accurate version of the original text. If the translation was done by a non-certified translator, you must submit an affidavit signed by the translator in front of a commissioner for oaths or a commissioner for taking affidavits [apply_SIN.pdf, page 5].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The assistant's answer correctly states the requirements for translated SIN documents and is fully supported by the retrieved context.
+- judge reason: The answer correctly states the requirements for translated SIN documents and is fully supported by the retrieved context.
 - gold: [('apply_SIN.pdf', 5)]
 
 ## q07 (direct): What does a legal guardian need to provide to apply for a child's SIN?
@@ -78,7 +78,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** Only members in good standing of one of the following are allowed to give paid immigration advice in Canada: a Canadian provincial or territorial law society, the Chambre des notaires du Québec, or the College of Immigration and Citizenship Consultants. As of November 23, 2021, the College of Immigration and Citizenship Consultants is the official regulator of immigration and citizenship consultants, and Immigration, Refugees and Citizenship Canada (IRCC) will not accept applications submitted by unlicensed consultants [3247-b-factsheet-do-it-right-eng.pdf, page 1].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer correctly identifies the authorized groups and is fully supported by the retrieved context.
+- judge reason: The answer correctly identifies who can give paid immigration advice in Canada and is fully supported by the retrieved context.
 - gold: [('3247-b-factsheet-do-it-right-eng.pdf', 1)]
 
 ## q10 (direct): What can happen to me if I use an unlicensed immigration consultant?
@@ -91,7 +91,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 - Risks of identity theft, money stolen from your bank account or credit card, threats of violence, and exploitation [source, page 1].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: False (invalid: [])
-- judge reason: The assistant's answer accurately reflects the information provided in the retrieved context, detailing the consequences of using an unlicensed immigration consultant.
+- judge reason: The answer correctly lists the consequences of using an unlicensed immigration consultant as stated in the retrieved context.
 - gold: [('3247-a-factsheet-unlicensed-consultant-eng.pdf', 1)]
 
 ## q11 (direct): Will IRCC ever phone me to collect fees or fines?
@@ -99,7 +99,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** No, IRCC will not phone you to collect fees or fines. They will not ask for personal or financial information over the phone, nor will they try to rush you into paying right away or ask you to pay fees using prepaid credit cards or similar services [fraud_newcomers.pdf, page 1].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The assistant's answer is correct and complete according to the REFERENCE and all factual claims are supported by the RETRIEVED CONTEXT.
+- judge reason: The answer correctly states that IRCC will not phone to collect fees or fines and is fully supported by the retrieved context from fraud_newcomers.pdf, page 1.
 - gold: [('fraud_newcomers.pdf', 1)]
 
 ## q12 (direct): On what day of the month is the Canada Child Benefit usually paid?
@@ -107,7 +107,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** The Canada Child Benefit is generally paid on the 20th of each month [ccb-2025.pdf, page 9].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer correctly states that the Canada Child Benefit is generally paid on the 20th of each month, which is supported by the retrieved context.
+- judge reason: The answer correctly states that the Canada Child Benefit is generally paid on the 20th of each month, which is supported by the retrieved context from page 9 of the document.
 - gold: [('ccb-2025.pdf', 9)]
 
 ## q13 (direct): By when do I have to tell the CRA that my marital status has changed?
@@ -123,7 +123,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** The deadline for completing your tax return is April 30 of each year [welcome.pdf, page 108].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer correctly states the deadline as April 30 and is supported by the retrieved context from page 108 of the document.
+- judge reason: The answer correctly states the deadline for filing a tax return in Canada as April 30, which is supported by the retrieved context.
 - gold: [('welcome.pdf', 108)]
 
 ## q15 (direct): What rights will I have if I become a Canadian citizen?
@@ -133,8 +133,8 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 - be a candidate in elections; and
 - apply for a Canadian passport and enter and leave the country freely [welcome.pdf, page 37].
 
-- correctness: 1  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The assistant answer correctly lists the rights of Canadian citizens as per the reference, but it omits the duty to serve on a jury and the civic responsibility to vote.
+- correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
+- judge reason: The assistant's answer correctly lists the rights of Canadian citizens as stated in the REFERENCE and is fully supported by the RETRIEVED CONTEXT.
 - gold: [('welcome.pdf', 37)]
 
 ## q16 (direct): Is it legal to drive in Canada without car insurance?
@@ -142,7 +142,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** It is strictly illegal to drive without car insurance in Canada [welcome.pdf, page 124].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer correctly states that it is strictly illegal to drive without car insurance in Canada, which is supported by the retrieved context from page 124 of the document.
+- judge reason: The answer correctly states that it is illegal to drive without car insurance in Canada, which is supported by the retrieved context.
 - gold: [('welcome.pdf', 124)]
 
 ## q17 (direct): How many benchmarks does the Canadian Language Benchmarks scale have?
@@ -166,7 +166,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 **Answer:** Privacy commissioners say retailers do not need to record a customer's driver's licence number because most needs can be met merely by examining the identification. They concluded that writing down the driver's licence number or reproducing the card itself cannot be justified, as the number may encode personal information such as the licensee’s birth date, and the card contains a photograph, signature, and other personal information that exceeds what is needed for most business purposes [licence-guide-for-retailers.pdf, page 5].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The assistant's answer is correct and complete, and all factual claims are supported by the retrieved context.
+- judge reason: The assistant's answer correctly states that privacy commissioners concluded that recording a driver's licence number is unjustified and provides reasons supported by the retrieved context.
 - gold: [('licence-guide-for-retailers.pdf', 5)]
 
 ## q20 (direct): Who can apply for an open work permit because of abuse at work?
@@ -181,8 +181,8 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 
 **Answer:** When you apply for a Social Insurance Number (SIN), you must provide a valid original primary document to prove your identity and legal status in Canada. If the name on your primary document is not the name you are currently using, you may also need to provide a valid supporting document. If you are applying for someone else, you may need to provide additional documents [apply_SIN.pdf, page 1].
 
-- correctness: 1  | grounded: False  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The answer is partly correct as it mentions the need for a primary document and possibly a supporting document, but it lacks specific examples of acceptable documents. The grounding is false because the specific examples of documents are not supported by the retrieved context.
+- correctness: 0  | grounded: False  | abstained: False  | citations valid: True (invalid: [])
+- judge reason: The answer does not specify the exact documents needed for different statuses (Canadian citizens, permanent residents, temporary residents) as detailed in the REFERENCE.
 - gold: [('apply_SIN.pdf', 2), ('apply_SIN.pdf', 3), ('welcome.pdf', 47), ('welcome.pdf', 48)]
 
 ## q22 (multi): How can I protect myself from fraud and scams as a newcomer?
@@ -202,7 +202,7 @@ Read at least 10 of these yourself. Do you agree with the verdict? Note where th
 6. Protect your Social Insurance Number (SIN) by storing it safely, not using it as identification, and only providing it when legally required. Never reply to emails asking for your SIN [protect_SIN.pdf, page 1].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: True (invalid: [])
-- judge reason: The assistant's answer is correct and complete, covering all key points from the retrieved context about protecting against fraud and scams as a newcomer.
+- judge reason: The assistant's answer is correct and complete, covering all key points from the retrieved context, and all factual claims are supported by the retrieved context.
 - gold: [('fraud_newcomers.pdf', 1), ('fraud_newcomers.pdf', 2), ('protect_SIN.pdf', 1), ('3247-a-factsheet-unlicensed-consultant-eng.pdf', 1)]
 
 ## q23 (multi): When should I give out my SIN and when can I refuse?
@@ -222,7 +222,7 @@ You can refuse to provide your SIN when it is not legally required, such as when
 You should avoid unlicensed consultants, as they may not have the necessary training and education, and are not held to the same ethical standards. Using an unlicensed consultant can lead to serious consequences, such as losing your money, having your application denied, or being barred from entering Canada [source, page 1].
 
 - correctness: 2  | grounded: True  | abstained: False  | citations valid: False (invalid: [])
-- judge reason: The answer correctly identifies that licensed representatives authorized by the College of Immigration and Citizenship Consultants can be trusted, and unlicensed consultants should be avoided, which is supported by the retrieved context.
+- judge reason: The answer correctly identifies licensed representatives as trustworthy and unlicensed consultants as those to avoid, supported by the retrieved context.
 - gold: [('3247-a-factsheet-unlicensed-consultant-eng.pdf', 1), ('3247-b-factsheet-do-it-right-eng.pdf', 1)]
 
 ## q25 (multi): What health coverage will I have as a newcomer and what does the Canada Health Act require of provincial plans?

@@ -1,0 +1,473 @@
+{
+  "label": "j1b",
+  "time": "2026-11-04T13:14:55",
+  "settings": {
+    "collection": "docassist_1000_100",
+    "k": 5,
+    "generator": "gpt-4o-mini",
+    "judge": "gpt-4o"
+  },
+  "summary": {
+    "n_answerable": 25,
+    "avg_correctness_0_to_2": 1.64,
+    "fully_correct_pct": 80.0,
+    "grounded_pct_of_answered": 83.3,
+    "valid_citations_pct_of_answered": 87.5,
+    "false_abstention_pct": 4.0,
+    "n_unanswerable": 5,
+    "abstention_accuracy_pct": 100.0,
+    "judge_failures": 0
+  },
+  "rows": [
+    {
+      "id": "q01",
+      "type": "direct",
+      "answerable": true,
+      "answer": "You do not have to provide your SIN when applying for a job [protect_SIN.pdf, page 3].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states that you do not have to provide your SIN when applying for a job, which is supported by the retrieved context from protect_SIN.pdf, page 3."
+    },
+    {
+      "id": "q02",
+      "type": "direct",
+      "answerable": true,
+      "answer": "You can report SIN fraud to the Canadian Anti-Fraud Centre by calling 1-888-495-8501 [protect_SIN.pdf, page 4].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly provides the phone number to report SIN fraud to the Canadian Anti-Fraud Centre, and this information is supported by the retrieved context."
+    },
+    {
+      "id": "q03",
+      "type": "direct",
+      "answerable": true,
+      "answer": "To apply for your newborn's Social Insurance Number (SIN), you need to sign the “Request for a Social Insurance Number for My Child” section at the bottom of the Registration of Birth form. Once completed, this section serves as the SIN application for your child. The information will be sent to Service Canada after the birth is registered, and Service Canada will then mail you your child's SIN. The SIN record will reflect your child's name as it appears on the Registration of Birth form [apply_newborn_SIN.pdf, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The assistant's answer correctly and completely explains the process of applying for a newborn's SIN as described in the REFERENCE and is fully supported by the RETRIEVED CONTEXT."
+    },
+    {
+      "id": "q04",
+      "type": "direct",
+      "answerable": true,
+      "answer": "Yes, if you do not live in Canada, you are eligible to apply by mail using the “Application for a Social Insurance Number - Information Guide for Applicants” form [apply_SIN.pdf, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 0,
+      "grounded": false,
+      "reason": "The answer only addresses applying by mail for those not living in Canada, missing the conditions under which residents can apply by mail, and the claim is not supported by the retrieved context."
+    },
+    {
+      "id": "q05",
+      "type": "direct",
+      "answerable": true,
+      "answer": "A temporary resident must provide one of the following documents to get a SIN: \n- A work permit issued by IRCC or CIC.\n- A study permit issued by IRCC or CIC that states the permit holder “may accept employment” or “may work” in Canada, or is accompanied by a “confirmation to work off campus” letter issued by IRCC or CIC before February 11, 2015.\n- A visitor record issued by IRCC or CIC stating that you are authorized to work in Canada or that was issued under specific regulations.\n- A diplomatic identity card and a work authorization [apply_SIN.pdf, page 3].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The assistant's answer correctly lists all the required documents for a temporary resident to obtain a SIN, and all claims are supported by the retrieved context."
+    },
+    {
+      "id": "q06",
+      "type": "direct",
+      "answerable": true,
+      "answer": "If your SIN document is in another language and has been translated, you need to submit a certified translation along with an attestation from a certified translator stating that the translation is a true and accurate version of the original text. If the translation was done by a non-certified translator, you must submit an affidavit signed by the translator in front of a commissioner for oaths or a commissioner for taking affidavits [apply_SIN.pdf, page 5].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states the requirements for translated SIN documents and is fully supported by the retrieved context."
+    },
+    {
+      "id": "q07",
+      "type": "direct",
+      "answerable": true,
+      "answer": "A legal guardian must provide the following to apply for a child's SIN: \n1. The child's valid primary document.\n2. An original or a certified copy of a document that confirms their legal guardianship, issued by a provincial or territorial authority (in Quebec, a notarized will is an acceptable document).\n3. If applying by mail, a valid primary document proving their identity [apply_SIN.pdf, page 4].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The assistant's answer correctly lists all the required documents for a legal guardian to apply for a child's SIN, and all claims are supported by the retrieved context."
+    },
+    {
+      "id": "q08",
+      "type": "direct",
+      "answerable": true,
+      "answer": "I don't know based on the provided documents.",
+      "abstained": true,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": 0,
+      "grounded": null,
+      "reason": "Assistant abstained although the answer is in the documents."
+    },
+    {
+      "id": "q09",
+      "type": "direct",
+      "answerable": true,
+      "answer": "Only members in good standing of one of the following are allowed to give paid immigration advice in Canada: a Canadian provincial or territorial law society, the Chambre des notaires du Québec, or the College of Immigration and Citizenship Consultants [3247-b-factsheet-do-it-right-eng.pdf, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly identifies the authorized groups for providing paid immigration advice in Canada and is fully supported by the retrieved context."
+    },
+    {
+      "id": "q10",
+      "type": "direct",
+      "answerable": true,
+      "answer": "Using an unlicensed immigration consultant can lead to serious consequences, such as:\n\n- Losing your money by paying for a service you never received or for fraudulent services.\n- Having your application denied if the consultant advises you to apply for a program you’re not eligible for.\n- Being barred from entering Canada if the consultant instructs you to lie or hide information on your application, resulting in a 5-year ban.\n- Risks of identity theft, money stolen from your bank account or credit card, threats of violence, and exploitation [source, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The assistant's answer is correct and complete according to the REFERENCE and all factual claims are supported by the RETRIEVED CONTEXT."
+    },
+    {
+      "id": "q11",
+      "type": "direct",
+      "answerable": true,
+      "answer": "No, IRCC will not phone you to collect fees or fines. They will not ask for personal or financial information over the phone, nor will they try to rush you into paying right away or ask you to pay fees using prepaid credit cards or similar services [fraud_newcomers.pdf, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states that IRCC will not phone to collect fees or fines and is fully supported by the retrieved context from 'fraud_newcomers.pdf, page 1'."
+    },
+    {
+      "id": "q12",
+      "type": "direct",
+      "answerable": true,
+      "answer": "The Canada Child Benefit is generally paid on the 20th of each month [ccb-2025.pdf, page 9].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states that the Canada Child Benefit is generally paid on the 20th of each month, which is supported by the retrieved context."
+    },
+    {
+      "id": "q13",
+      "type": "direct",
+      "answerable": true,
+      "answer": "You must let the CRA know by the end of the month following the month in which your marital status changed [ccb-2025.pdf, page 13].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states the requirement to inform the CRA by the end of the month following the change in marital status, which is supported by the retrieved context."
+    },
+    {
+      "id": "q14",
+      "type": "direct",
+      "answerable": true,
+      "answer": "The deadline for completing your tax return is April 30 of each year [welcome.pdf, page 108].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states the deadline for filing a tax return in Canada as April 30, which is supported by the retrieved context from welcome.pdf, page 108."
+    },
+    {
+      "id": "q15",
+      "type": "direct",
+      "answerable": true,
+      "answer": "If you become a Canadian citizen, you will have the right to: \n- vote in federal, provincial or territorial, and municipal elections;\n- be a candidate in elections; and\n- apply for a Canadian passport and enter and leave the country freely [welcome.pdf, page 37].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The assistant's answer correctly lists the rights of Canadian citizens as stated in the REFERENCE and is fully supported by the RETRIEVED CONTEXT."
+    },
+    {
+      "id": "q16",
+      "type": "direct",
+      "answerable": true,
+      "answer": "It is strictly illegal to drive without car insurance in Canada [welcome.pdf, page 124].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states that it is illegal to drive without car insurance in Canada, which is supported by the retrieved context."
+    },
+    {
+      "id": "q17",
+      "type": "direct",
+      "answerable": true,
+      "answer": "The Canadian Language Benchmarks scale has 12 benchmarks [language-benchmarks.pdf, page 11].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states that the Canadian Language Benchmarks scale has 12 benchmarks, which is supported by the retrieved context from page 11."
+    },
+    {
+      "id": "q18",
+      "type": "direct",
+      "answerable": true,
+      "answer": "Yes, all permanent residents can work for any employer they wish to in Canada [employer-roadmap-en.pdf, page 6].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly states that permanent residents can work for any employer in Canada, which is supported by the retrieved context."
+    },
+    {
+      "id": "q19",
+      "type": "direct",
+      "answerable": true,
+      "answer": "Privacy commissioners say retailers do not need to record a customer's driver's licence number because most needs can be met merely by examining the identification. They concluded that writing down the driver's licence number or reproducing the card itself cannot be justified, as the number may encode personal information such as the licensee’s birth date, and the card contains a photograph, signature, and other personal information that exceeds what is needed for most business purposes [licence-guide-for-retailers.pdf, page 5].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The assistant's answer correctly states that privacy commissioners concluded that recording a driver's licence number is unjustified and provides reasons supported by the retrieved context."
+    },
+    {
+      "id": "q20",
+      "type": "direct",
+      "answerable": true,
+      "answer": "Temporary foreign workers in Canada who hold a valid work permit that is employer-specific or was issued under the Seasonal Agricultural Worker Program, or who have applied to renew this type of permit, and who are being abused or at risk of being abused in relation to their job in Canada can apply for an open work permit for vulnerable workers. Family members in Canada can also apply if the principal applicant has been issued an open work permit for vulnerable workers [open-work-permit.pdf, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The assistant's answer correctly identifies who can apply for an open work permit due to abuse at work and is fully supported by the retrieved context."
+    },
+    {
+      "id": "q21",
+      "type": "multi",
+      "answerable": true,
+      "answer": "When you apply for a Social Insurance Number (SIN), you must provide a valid original primary document to prove your identity and legal status in Canada. If the name on your primary document is not the name you are currently using, you may also need to provide a valid supporting document. If you are applying for someone else, you may need to provide additional documents [apply_SIN.pdf, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 1,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 0,
+      "grounded": false,
+      "reason": "The answer does not specify the exact documents needed for different statuses (Canadian citizens, permanent residents, temporary residents) as detailed in the REFERENCE."
+    },
+    {
+      "id": "q22",
+      "type": "multi",
+      "answerable": true,
+      "answer": "To protect yourself from fraud and scams as a newcomer to Canada, you should follow these guidelines:\n\n1. Be cautious of phone calls from people posing as government officials. Remember that Immigration, Refugees and Citizenship Canada (IRCC) will never contact you over the telephone to collect fees or fines, threaten you, or ask for personal or financial information over the phone [fraud_newcomers.pdf, page 1].\n\n2. If you receive a suspicious call, ask for the caller's name, hang up, and verify the call by contacting the IRCC directly. Report any suspicious calls to the Canadian Anti-Fraud Centre or your local police if you have lost money [fraud_newcomers.pdf, page 1].\n\n3. Protect your Personal Identification Number (PIN) for debit and credit cards by never sharing it with anyone, memorizing it, and keeping it secure. Check your account statements frequently for unauthorized transactions [welcome.pdf, page 113].\n\n4. Be wary of telemarketing calls and never provide personal or financial information over the phone unless you initiated the call yourself. If uncertain, hang up [welcome.pdf, page 114].\n\n5. Avoid phishing scams by not responding to emails that ask for personal information, even if they appear to come from legitimate sources [welcome.pdf, page 114].\n\n6. Protect your Social Insurance Number (SIN) by storing it safely, not using it as identification, and only providing it when legally required. Never reply to emails asking for your SIN [protect_SIN.pdf, page 1].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 6,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer is correct and complete according to the REFERENCE and all factual claims are supported by the RETRIEVED CONTEXT."
+    },
+    {
+      "id": "q23",
+      "type": "multi",
+      "answerable": true,
+      "answer": "You should provide your SIN when it is legally required, such as to show to your new employer after finding a job, for income tax purposes, to financial institutions where you are earning interest or income, or when applying for certain government benefits like the Canada Pension Plan or Employment Insurance [welcome.pdf, page 48]. \n\nYou can refuse to provide your SIN in situations where it is not legally required, such as when applying for a job, renting a property, negotiating a lease, applying for a credit card, cashing a cheque, or signing up for services like cell phone or Internet [protect_SIN.pdf, page 3]. If asked for your SIN when it is not legally required, you should inquire why it is being requested and explain that you do not want to provide it [protect_SIN.pdf, page 3].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 3,
+        "invalid": [],
+        "valid": true
+      },
+      "correctness": 2,
+      "grounded": true,
+      "reason": "The answer correctly identifies when to provide and refuse to provide a SIN, and all claims are supported by the retrieved context."
+    },
+    {
+      "id": "q24",
+      "type": "multi",
+      "answerable": true,
+      "answer": "You can trust a licensed representative who is authorized by the College of Immigration and Citizenship Consultants. It is advisable to ask people you trust for recommendations, get advice from several sources before choosing, and check the representative's training and experience. Be cautious of anyone who will not answer your questions or suggests you provide false information on your application [source, page]. \n\nYou should avoid unlicensed consultants, as they may not have the necessary training and can lead to serious consequences such as losing your money, having your application denied, or being barred from entering Canada. Unlicensed consultants are not held to the same ethical standards as licensed representatives [source, page].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": 1,
+      "grounded": false,
+      "reason": "The assistant's answer is partly correct but not fully grounded. It correctly identifies the need for a licensed consultant and the risks of unlicensed consultants, but it lacks specific grounding from the retrieved context for some claims, such as asking people you trust for recommendations."
+    },
+    {
+      "id": "q25",
+      "type": "multi",
+      "answerable": true,
+      "answer": "As a newcomer, you will be eligible for health coverage under the provincial health care insurance plan if you meet the residency requirements. The Canada Health Act ensures that all bona fide residents of provinces are entitled to coverage under one of the twelve provincial/territorial health care insurance plans. However, you must register for coverage and maintain your eligibility by renewing your coverage and remaining in your home province or territory for a prescribed number of days each year [source, page 21]. \n\nThe provincial plans must operate in a manner that does not deny coverage or preclude access to necessary hospital and physician services for bona fide residents. Additionally, while provinces have the right to levy taxes and potentially charge premiums, administrative arrangements should ensure that residents are not denied coverage due to an inability to pay premiums [source, page 315].",
+      "abstained": false,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": 0,
+      "grounded": false,
+      "reason": "The answer does not address the specific health coverage for newcomers or the requirements of the Canada Health Act as outlined in the REFERENCE."
+    },
+    {
+      "id": "q26",
+      "type": "unanswerable",
+      "answerable": false,
+      "answer": "I don't know based on the provided documents.",
+      "abstained": true,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": null,
+      "grounded": null,
+      "reason": "Correct abstention."
+    },
+    {
+      "id": "q27",
+      "type": "unanswerable",
+      "answerable": false,
+      "answer": "I don't know based on the provided documents.",
+      "abstained": true,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": null,
+      "grounded": null,
+      "reason": "Correct abstention."
+    },
+    {
+      "id": "q28",
+      "type": "unanswerable",
+      "answerable": false,
+      "answer": "I don't know based on the provided documents.",
+      "abstained": true,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": null,
+      "grounded": null,
+      "reason": "Correct abstention."
+    },
+    {
+      "id": "q29",
+      "type": "unanswerable",
+      "answerable": false,
+      "answer": "I don't know based on the provided documents.",
+      "abstained": true,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": null,
+      "grounded": null,
+      "reason": "Correct abstention."
+    },
+    {
+      "id": "q30",
+      "type": "unanswerable",
+      "answerable": false,
+      "answer": "I don't know based on the provided documents.",
+      "abstained": true,
+      "citations": {
+        "n_cited": 0,
+        "invalid": [],
+        "valid": false
+      },
+      "correctness": null,
+      "grounded": null,
+      "reason": "Correct abstention."
+    }
+  ]
+}

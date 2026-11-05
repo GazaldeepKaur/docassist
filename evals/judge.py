@@ -60,7 +60,8 @@ Grade the assistant answer.
   0 = wrong, contradicts the reference, or does not answer. If the reference says the documents do not answer
   the question, any substantive answer is 0.
 - grounded: true only if EVERY factual claim in the answer is supported by the RETRIEVED CONTEXT. Facts that are
-  true but appear only in the REFERENCE, or come from outside knowledge, make it false.
+  true but appear only in the REFERENCE, or come from outside knowledge, make it false. 
+  Do NOT lower grounded because the answer is incomplete; judge only whether the claims it makes are supported.
 - reason: one short sentence naming the deciding evidence.
 Return: {{"correctness": 0, "grounded": false, "reason": "..."}}"""
 
